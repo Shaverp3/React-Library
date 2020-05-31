@@ -1,0 +1,142 @@
+{
+  "libraries": [
+    {
+      "id": 1,
+      "name": "Shaver Public Library",
+      "address": "727 Garvin Ave. Charleston, WV",
+      "username": "Shaverp",
+      "password": "123",
+      "url": "www.SPL.com",
+      "image": "/images/Library.jpg"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "genre": "Fiction",
+      "ISBN": "jkrhpss123456789",
+      "librariesId": 1,
+      "available": true
+    },
+    {
+      "id": 3,
+      "title": "Harry Potter and the Deathly Hallows",
+      "author": "J.K. Rowling",
+      "genre": "Fiction",
+      "ISBN": "jkrhpdh345678901",
+      "librariesId": 1,
+      "available": false
+    },
+    {
+      "id": 4,
+      "title": "Harry Potter and the Chamber of Secrets",
+      "author": "J.K. Rowling",
+      "genre": "Fiction",
+      "ISBN": "jkrhpcos45678901",
+      "librariesId": 1,
+      "available": true
+    },
+    {
+      "id": 5,
+      "title": "Everything I Never Told You",
+      "author": "Celeste Ng",
+      "genre": "Non-fiction",
+      "ISBN": "cneinty234567890",
+      "librariesId": 1,
+      "available": false
+    },
+    {
+      "id": 6,
+      "title": "Is Everyone Hanging Out Without Me?",
+      "author": "Mindy Kaling",
+      "genre": "Non-fiction",
+      "ISBN": "mkiehowm12345678",
+      "librariesId": 1,
+      "available": true
+    },
+    {
+      "id": 7,
+      "title": "The Electric Kook-Aid Acid Test",
+      "author": "Tom Wolfe",
+      "genre": "Fiction",
+      "ISBN": "twekaat234567890",
+      "librariesId": 1,
+      "available": true
+    },
+    {
+      "id": 8,
+      "title": "Are You There, Vodka? It's Me, Chelsea",
+      "author": "Chelsea Handler",
+      "genre": "Non-fiction",
+      "ISBN": "chaytvimc2345678",
+      "librariesId": 1,
+      "available": false
+    }
+  ],
+  "patrons": [
+    {
+      "id": 1,
+      "name": "Henry Potter",
+      "phone": "304-757-7095",
+      "email": "henrypotter@aol.com",
+      "DOB": "01/01/1932",
+      "librariesId": 1,
+      "active": false
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "phone": "304-755-7788",
+      "email": "bob.smith@google.com",
+      "DOB": "03/01/1962",
+      "librariesId": 1,
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Mary Potter",
+      "phone": "304-757-7095",
+      "email": "marypotter@aol.com",
+      "DOB": "06/01/1927",
+      "librariesId": 1,
+      "active": false
+    },
+    {
+      "id": 4,
+      "name": "Wayne Shaw",
+      "phone": "304-609-0095",
+      "email": "wks@aol.com",
+      "DOB": "09/29/1984",
+      "librariesId": 1,
+      "active": true
+    }
+  ],
+  "books-patrons": [
+    {
+      "id": 1,
+      "checkoutDate": "05/14/2020",
+      "dueDate": "05/31/2020",
+      "returnDate": "",
+      "booksId": 4,
+      "patronsId": 4
+    },
+    {
+      "id": 2,
+      "checkoutDate": "05/29/2020",
+      "dueDate": "06/13/2020",
+      "returnDate": "",
+      "booksId": 6,
+      "patronsId": 4
+    },
+    {
+      "id": 3,
+      "checkoutDate": "05/14/2020",
+      "dueDate": "05/31/2020",
+      "returnDate": "05/29/2020",
+      "booksId": 1,
+      "patronsId": 1
+    }
+  ]
+}
