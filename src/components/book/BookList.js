@@ -11,12 +11,12 @@ class BookList extends Component {
 
     deleteBook = id => {
         BookManager.delete(id)
-        .then(BookManager.getAll)
-        .then((newbooks) => {
-            this.setState({
-                books: newbooks
+            .then(BookManager.getAll)
+            .then((newbooks) => {
+                this.setState({
+                    books: newbooks
+                })
             })
-        })
     }
 
     componentDidMount() {
@@ -36,8 +36,15 @@ class BookList extends Component {
 
         return (
             <>
-            <h3 className="search-bookTitle">Search Books: </h3>
-            <input className="searchBooks" type="text"></input>
+                <section className="section-content">
+                    <button type="button"
+                        className="btn"
+                        onClick={() => { this.props.history.push("/books/new") }}>
+                        New Book
+                    </button>
+                </section>
+                <h3 className="search-bookTitle">Search Books: </h3>
+                <input className="searchBooks" type="text"></input>
                 <div className="container-cards">
                     {this.state.books.map(currentBookInLoop => <BookCard
                         key={currentBookInLoop.id}

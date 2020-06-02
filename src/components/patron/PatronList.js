@@ -11,12 +11,12 @@ class PatronList extends Component {
 
     archivePatron = id => {
         PatronManager.archive(id)
-        .then(PatronManager.getAll)
-        .then((newpatrons) => {
-            this.setState({
-                patrons: newpatrons
+            .then(PatronManager.getAll)
+            .then((newpatrons) => {
+                this.setState({
+                    patrons: newpatrons
+                })
             })
-        })
     }
 
     componentDidMount() {
@@ -35,18 +35,26 @@ class PatronList extends Component {
         console.log("PATRON LIST: Render");
 
         return (
-        <>
-        <h3>List of Patrons:<span className="card-employeename"></span></h3>
-        <div className="container-cards">
-        {this.state.patrons.map(currentPatronInLoop =>
-         <PatronCard
-            key={currentPatronInLoop.id}
-            patronProp={currentPatronInLoop}
-            archivePatron={this.archivePatron}
-        />
-    )}
-        </div>
-        </>
+            <>
+                <section className="section-content">
+                    <button type="button"
+                        className="btn"
+                        onClick={() => { this.props.history.push("/patrons/new") }}>
+                        New Patron
+                    </button>
+                </section>
+
+                <h3>List of Patrons:<span className="card-employeename"></span></h3>
+                <div className="container-cards">
+                    {this.state.patrons.map(currentPatronInLoop =>
+                        <PatronCard
+                            key={currentPatronInLoop.id}
+                            patronProp={currentPatronInLoop}
+                            archivePatron={this.archivePatron}
+                        />
+                    )}
+                </div>
+            </>
         )
     }
 }

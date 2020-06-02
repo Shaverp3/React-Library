@@ -18,7 +18,8 @@
       "genre": "Fiction",
       "ISBN": "jkrhpss123456789",
       "librariesId": 1,
-      "available": true
+      "available": true,
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/51DF6ZR8G7L._SX329_BO1,204,203,200_.jpg"
     },
     {
       "id": 3,
@@ -27,7 +28,8 @@
       "genre": "Fiction",
       "ISBN": "jkrhpdh345678901",
       "librariesId": 1,
-      "available": false
+      "available": true,
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/71sH3vxziLL.jpg"
     },
     {
       "id": 4,
@@ -36,7 +38,8 @@
       "genre": "Fiction",
       "ISBN": "jkrhpcos45678901",
       "librariesId": 1,
-      "available": true
+      "available": true,
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/51jNORv6nQL._SX340_BO1,204,203,200_.jpg"
     },
     {
       "id": 5,
@@ -45,7 +48,8 @@
       "genre": "Non-fiction",
       "ISBN": "cneinty234567890",
       "librariesId": 1,
-      "available": false
+      "available": true,
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/81VNtes7mXL.jpg"
     },
     {
       "id": 6,
@@ -54,7 +58,8 @@
       "genre": "Non-fiction",
       "ISBN": "mkiehowm12345678",
       "librariesId": 1,
-      "available": true
+      "available": true,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1443264638l/10335308._SY475_.jpg"
     },
     {
       "id": 7,
@@ -63,7 +68,8 @@
       "genre": "Fiction",
       "ISBN": "twekaat234567890",
       "librariesId": 1,
-      "available": true
+      "available": true,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388205477l/7442.jpg"
     },
     {
       "id": 8,
@@ -72,7 +78,28 @@
       "genre": "Non-fiction",
       "ISBN": "chaytvimc2345678",
       "librariesId": 1,
-      "available": false
+      "available": true,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1215803088l/40173.jpg"
+    },
+    {
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "author": "J.K. Rowling",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1499277281l/5.jpg",
+      "genre": "Fiction",
+      "ISBN": "jkrhpatpoa456780",
+      "librariesId": 1,
+      "available": true,
+      "id": 9
+    },
+    {
+      "title": "Harry Potter and the Cursed Child",
+      "author": "J.K. Rowling",
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1470082995l/29056083._SY475_.jpg",
+      "genre": "Fiction",
+      "ISBN": "jkrhpatcc567890",
+      "librariesId": 1,
+      "available": true,
+      "id": 10
     }
   ],
   "patrons": [
@@ -101,7 +128,7 @@
       "email": "marypotter@aol.com",
       "DOB": "06/01/1927",
       "librariesId": 1,
-      "active": false
+      "active": true
     },
     {
       "id": 4,
@@ -111,6 +138,15 @@
       "DOB": "09/29/1984",
       "librariesId": 1,
       "active": true
+    },
+    {
+      "name": "Marylin McKeown",
+      "phone": "304-690-0021",
+      "email": "marylin63@yahoo.com",
+      "DOB": "12/25/1975",
+      "librariesId": 1,
+      "active": true,
+      "id": 5
     }
   ],
   "books-patrons": [
@@ -118,13 +154,13 @@
       "id": 1,
       "checkoutDate": "05/14/2020",
       "dueDate": "05/31/2020",
-      "returnDate": "",
+      "returnDate": "05/30/2020",
       "booksId": 4,
       "patronsId": 4
     },
     {
       "id": 2,
-      "checkoutDate": "05/29/2020",
+      "checkoutDate": "05/30/2020",
       "dueDate": "06/13/2020",
       "returnDate": "",
       "booksId": 6,
@@ -136,6 +172,70 @@
       "dueDate": "05/31/2020",
       "returnDate": "05/29/2020",
       "booksId": 1,
+      "patronsId": 1
+    },
+    {
+      "id": 4,
+      "checkoutDate": "03/14/2020",
+      "dueDate": "03/30/2020",
+      "returnDate": "03/29/2020",
+      "booksId": 4,
+      "patronsId": 3
+    },
+    {
+      "id": 5,
+      "checkoutDate": "03/14/2020",
+      "dueDate": "03/30/2020",
+      "returnDate": "03/29/2020",
+      "booksId": 6,
+      "patronsId": 3
+    },
+    {
+      "id": 6,
+      "checkoutDate": "05/14/2020",
+      "dueDate": "05/31/2020",
+      "returnDate": "05/30/2020",
+      "booksId": 6,
+      "patronsId": 1
+    },
+    {
+      "id": 7,
+      "checkoutDate": "05/30/2020",
+      "dueDate": "06/13/2020",
+      "returnDate": "",
+      "booksId": 1,
+      "patronsId": 2
+    },
+    {
+      "id": 8,
+      "checkoutDate": "05/30/2020",
+      "dueDate": "06/13/2020",
+      "returnDate": "",
+      "booksId": 4,
+      "patronsId": 2
+    },
+    {
+      "id": 9,
+      "checkoutDate": "05/14/2020",
+      "dueDate": "05/31/2020",
+      "returnDate": "05/30/2020",
+      "booksId": 2,
+      "patronsId": 1
+    },
+    {
+      "id": 10,
+      "checkoutDate": "04/10/2020",
+      "dueDate": "04/24/2020",
+      "returnDate": "04/24/2020",
+      "booksId": 2,
+      "patronsId": 2
+    },
+    {
+      "id": 11,
+      "checkoutDate": "04/14/2020",
+      "dueDate": "04/28/2020",
+      "returnDate": "04/28/2020",
+      "booksId": 8,
       "patronsId": 1
     }
   ]
